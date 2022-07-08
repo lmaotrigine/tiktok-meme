@@ -1,0 +1,19 @@
+[package]
+name = "tiktok-meme"
+description = "Fantastic (maybe) CLI for getting data out of TikTok's text-to-speech API"
+version = "0.1.0"
+authors = ["VJ#5945 <root@varunj.me>"]
+license = "BSD-like"
+repository = "https://git.5ht2.me/darthshittious/tiktok-meme"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "3.1.12", features = ["derive"] }
+data-encoding = "2.3.2"
+reqwest = "0.11.10"
+serde = { version = "1.0.136", features = ["derive"] }
+serde_json = "1.0.79"
+tokio = { version = "1.17.0", features = ["full"] }
+anyhow = "1.0.57"
